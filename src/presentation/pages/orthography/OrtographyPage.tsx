@@ -3,6 +3,7 @@ import { TextMessageBox } from "../../components/chat-input-boxes/TextMessageBox
 import { TypingLoaders } from "../../components/loaders/TypingLoaders"
 import { GPTMessage } from "../../components/sidebar/chat-bubles/GPTMessage"
 import { MyMessage } from "../../components/sidebar/chat-bubles/MyMessage"
+import { TextMessageBoxFIle } from "../../components/chat-input-boxes/TextMessageBoxFile"
 
 interface Message {
   text: string;
@@ -46,7 +47,10 @@ export const OrthographyPage = () => {
         </div>
       </div>
 
-      <TextMessageBox onSendMessage={handlePost} placeHolder="Escribe aqui lo que deseas traducir" disableCorrections />
+       {/* <TextMessageBox onSendMessage={handlePost} placeHolder="Escribe aqui lo que deseas traducir" disableCorrections /> */}
+
+       <TextMessageBoxFIle onSendMessage={handlePost} placeHolder="Escribe aqui lo que deseas traducir"  />
+
     </div>
   )
 }
