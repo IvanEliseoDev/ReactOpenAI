@@ -9,7 +9,7 @@ interface Message {
   isGPT: boolean;
 
 }
-export const OrthographyPage = () => {
+export const ChatTemplate = () => {
 
   const [isLoading, setIsLoading] = useState(false)
   const [messages, setmessages] = useState<Message[]>([])
